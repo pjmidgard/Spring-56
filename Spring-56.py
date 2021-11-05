@@ -1748,7 +1748,7 @@ class compression:
 
                                            else:
 
-                                                  if N4<=(2*29)-1 and lenf2==32:
+                                                  if N4<=(2*28)-1 and lenf2==32:
 
                                                              N4=bin(N4)[2:]
 
