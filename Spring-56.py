@@ -1556,7 +1556,7 @@ class compression:
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
-                                                         xc=32e-lenf
+                                                         xc=32-lenf
                                                          z=0
                                                          if xc!=0:
                                                                if xc!=32:
