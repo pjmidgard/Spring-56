@@ -1494,7 +1494,7 @@ class compression:
 
                                            if sda12[0:2]=="01":
 
-                                                         sda10=sda3[ei:ei+16]
+                                                         sda10=sda3[ei:ei+17]
 
                                                          sda10=sda10[2:]
 
@@ -1536,7 +1536,7 @@ class compression:
                                                          
                                                         
                                                          sda17=sda17+szx2+N4
-                                                         ei=ei+16
+                                                         ei=ei+17
                                                          
                                            if sda12[0:2]=="11":
 
@@ -1716,10 +1716,10 @@ class compression:
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
-                                                         xc=14-lenf
+                                                         xc=15-lenf
                                                          z=0
                                                          if xc!=0:
-                                                               if xc!=14:
+                                                               if xc!=15:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
