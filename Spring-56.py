@@ -1494,7 +1494,7 @@ class compression:
 
                                            if sda12[0:2]=="01":
 
-                                                         sda10=sda3[ei:ei+8]
+                                                         sda10=sda3[ei:ei+9]
 
                                                          sda10=sda10[2:]
 
@@ -1516,7 +1516,7 @@ class compression:
                                                         
 
                                                         
-                                                         N3 = PI_take[N1:N1+1]
+                                                         N3 = PI_take[N1:N1+2]
                                                          N3=int(N3)
                                                          
                                                          N4=bin(N3)[2:]
@@ -1536,7 +1536,7 @@ class compression:
                                                          
                                                         
                                                          sda17=sda17+szx2+N4
-                                                         ei=ei+8
+                                                         ei=ei+9
                                                          
                                            if sda12[0:2]=="11":
 
@@ -1709,17 +1709,17 @@ class compression:
                                                   
                                           
                                         
-                                           elif lenf2==32 and N5==1 and N3>=0:
+                                           elif lenf2==32  and N7==2 and N5==2 and N3>=0:
                                                          N4=bin(N3)[2:]
                                                          
 
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
-                                                         xc=6-lenf
+                                                         xc=7-lenf
                                                          z=0
                                                          if xc!=0:
-                                                               if xc!=6:
+                                                               if xc!=7:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
@@ -1728,7 +1728,7 @@ class compression:
 
                                                
                                                          
-                                           elif lenf2==32 and N5==10 and N7==5 or lenf2==32 and N5==9 and N7==5 or lenf2==32 and N5==8 and N7==5 or lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
+                                           elif lenf2==32 and N7==5 and N7==5 and N3>=0:
 
                                                          N4=bin(N3)[2:]
                                                          
