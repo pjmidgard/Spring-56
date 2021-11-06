@@ -1728,7 +1728,7 @@ class compression:
 
                                                
                                                          
-                                           elif lenf2==32 and N7==5 and N7==5 and N3>=0:
+                                           elif lenf2==32  and N7==5 and N5==5 and N3>=0:
 
                                                          N4=bin(N3)[2:]
                                                          
