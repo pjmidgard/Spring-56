@@ -1695,9 +1695,8 @@ class compression:
                                            N3 = PI_take.find(N1)
                                            N6=str(N3)
                                            N5=len(N6)
-                                           N8=int(N6)
+                                           
                                            N7=len(N1)
-
                                            
 
 
@@ -1710,7 +1709,7 @@ class compression:
                                                   
                                           
                                         
-                                           elif lenf2==32 and N5>=2 and N3>=0 and N7==1:
+                                           elif lenf2==32 and N5==1 and N3>=0:
                                                          N4=bin(N3)[2:]
                                                          
 
