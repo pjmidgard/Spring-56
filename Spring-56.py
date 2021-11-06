@@ -318,16 +318,16 @@ class compression:
                                             
                                             
                                             el=eo
-                                            eo=eo+2523109
+                                            eo=eo+2352016
                                             takebitsize=sda[el:eo]
                                             xssd=len(takebitsize)
-                                            el=eo-2523109
-                                            eo=eo-2523109
+                                            el=eo-2352016
+                                            eo=eo-2352016
 
                                             
-                                            if xssd<=2523108:
+                                            if xssd<=2352015:
                                                 wer=wer+takebitsize
-                                                C=C+2523108
+                                                C=C+2352015
                                                    
                                                 n = int(wer, 2)
                                         
@@ -361,7 +361,7 @@ class compression:
                                             takebitdw2=int(takebit2, 2)
                                             
                                             el=eo
-                                            eo=eo+2523092
+                                            eo=eo+2351999
                                             takebit=sda[el:eo]
              
                                             takebitdw=int(takebit, 2)
@@ -369,7 +369,7 @@ class compression:
                                             numbertc=takebitdw
                                             
                                                
-                                            while sw<180222:
+                                            while sw<168001:
                                                     
                                                 numbertc3=numbertc%16383
                                                 numbertc1=numbertc//16383
@@ -400,10 +400,10 @@ class compression:
                                             ddr=len(wers)
                                             
                                             sw=0
-                                            el1=2523108
-                                            eo1=2523108
+                                            el1=2352015
+                                            eo1=2352015
                                            
-                                            while sw<180222:
+                                            while sw<168001:
                                                     
                                                 el1=eo1
                                                 eo1=eo1-14
@@ -527,8 +527,8 @@ class compression:
                         numberschangenotexist = []
                         numbers = []
                         
-                        block=180222
-                        blockw=180221
+                        block=168001
+                        blockw=168000
                         blockw1=16384
                         virationc=16383
                         bitc=14
@@ -731,11 +731,15 @@ class compression:
                                     szx=bin(cvz)[2:]
                                     cvz=0
                                     lenf=len(szx)
+                                    print(lenf)
+                                    
                                     
                                     if lenfg>0:
-                                        xc=2523092-lenf
+                                        if lenf>2351999:
+                                            raise SystemExit
+                                        xc=2351999-lenf
                                         z=0
-                                        if xc!=0 and lenf!=2523092:
+                                        if xc!=0 and lenf!=2351999:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
@@ -1034,16 +1038,16 @@ class compression:
                                             
                                             
                                             el=eo
-                                            eo=eo+2523109
+                                            eo=eo+2352016
                                             takebitsize=sda[el:eo]
                                             xssd=len(takebitsize)
-                                            el=eo-2523109
-                                            eo=eo-2523109
+                                            el=eo-2352016
+                                            eo=eo-2352016
 
                                             
-                                            if xssd<=2523108:
+                                            if xssd<=2352015:
                                                 wer=wer+takebitsize
-                                                C=C+2523108
+                                                C=C+2352015
                                                    
                                                 n = int(wer, 2)
                                         
@@ -1077,7 +1081,7 @@ class compression:
                                             takebitdw2=int(takebit2, 2)
                                             
                                             el=eo
-                                            eo=eo+2523092
+                                            eo=eo+2351999
                                             takebit=sda[el:eo]
              
                                             takebitdw=int(takebit, 2)
@@ -1085,7 +1089,7 @@ class compression:
                                             numbertc=takebitdw
                                             
                                                
-                                            while sw<180222:
+                                            while sw<168001:
                                                     
                                                 numbertc3=numbertc%16383
                                                 numbertc1=numbertc//16383
@@ -1116,10 +1120,10 @@ class compression:
                                             ddr=len(wers)
                                             
                                             sw=0
-                                            el1=2523108
-                                            eo1=2523108
+                                            el1=2352015
+                                            eo1=2352015
                                            
-                                            while sw<180222:
+                                            while sw<168001:
                                                     
                                                 el1=eo1
                                                 eo1=eo1-14
