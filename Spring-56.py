@@ -318,16 +318,16 @@ class compression:
                                             
                                             
                                             el=eo
-                                            eo=eo+2352016
+                                            eo=eo+2688016
                                             takebitsize=sda[el:eo]
                                             xssd=len(takebitsize)
-                                            el=eo-2352016
-                                            eo=eo-2352016
+                                            el=eo-2688016
+                                            eo=eo-2688016
 
                                             
-                                            if xssd<=2352015:
+                                            if xssd<=2688016:
                                                 wer=wer+takebitsize
-                                                C=C+2352015
+                                                C=C+2688016
                                                    
                                                 n = int(wer, 2)
                                         
@@ -400,8 +400,8 @@ class compression:
                                             ddr=len(wers)
                                             
                                             sw=0
-                                            el1=2352015
-                                            eo1=2352015
+                                            el1=2688016
+                                            eo1=2688016
                                            
                                             while sw<168001:
                                                     
@@ -1038,16 +1038,16 @@ class compression:
                                             
                                             
                                             el=eo
-                                            eo=eo+2352016
+                                            eo=eo+2352014
                                             takebitsize=sda[el:eo]
                                             xssd=len(takebitsize)
-                                            el=eo-2352016
-                                            eo=eo-2352016
+                                            el=eo-2352014
+                                            eo=eo-2352014
 
                                             
-                                            if xssd<=2352015:
+                                            if xssd<=2352014:
                                                 wer=wer+takebitsize
-                                                C=C+2352015
+                                                C=C+2352014
                                                    
                                                 n = int(wer, 2)
                                         
