@@ -745,7 +745,7 @@ class compression:
                                                 z=z+1
                                         
                                         if xx==1:  
-                                            wer=wer+szxw1+szx
+                                            wer=wer+szx+szxw1
                                             szxw1=""
                                        
                                             
