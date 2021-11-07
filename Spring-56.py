@@ -385,9 +385,9 @@ class compression:
                                                 szxzzz=""
                                                 szxzzz=bin(numbertc3)[2:]
                                                 dd=len(szxzzz)
-                                                xc=2351999-dd
+                                                xc=2351999+15-dd
                                                 z=0
-                                                if xc!=0 and dd!=2351999:
+                                                if xc!=0 and dd!=2351999+15:
                                                     while z<xc:
                                                         szxzzz="0"+szxzzz
                                                         z=z+1
@@ -1105,9 +1105,9 @@ class compression:
                                                 szxzzz=""
                                                 szxzzz=bin(numbertc3)[2:]
                                                 dd=len(szxzzz)
-                                                xc=2351999-dd
+                                                xc=2351999+15-dd
                                                 z=0
-                                                if xc!=0 and dd!=2351999:
+                                                if xc!=0 and dd!2351999+15:
                                                     while z<xc:
                                                         szxzzz="0"+szxzzz
                                                         z=z+1
