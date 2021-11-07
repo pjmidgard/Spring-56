@@ -317,7 +317,44 @@ class compression:
                                             wers=""
                                             
                                             
-                                     
+                                            el=eo
+                                            eo=eo+2352014
+                                            takebitsize=sda[el:eo]
+                                            xssd=len(takebitsize)
+                                            el=eo-2352014
+                                            eo=eo-2352014
+
+                                            
+                                            if xssd<2351999:
+                                                wer=wer+takebitsize
+                                                C=C+xssd
+                                                   
+                                                n = int(wer, 2)
+                                        
+                                                qqwslenf=len(wer)
+                                                qqwslenf=(qqwslenf/8)*2
+                                                qqwslenf=str(qqwslenf)
+                                                qqwslenf="%0"+qqwslenf+"x"
+                                             
+                                                jl=binascii.unhexlify(qqwslenf % n)
+                                                sssssw=len(jl)
+                                                data=jl
+                                                qqqwz=qqqwz+1
+                                                szxzzza=""
+                                                szxzs=""
+                                        
+                                                blockw=4
+                                                blockw1=3
+                                    
+                                                    #print(sssssw)
+                                            
+                                                wer=""
+                                       
+                                                assx=10
+                                        
+                                                f2.write(jl)
+                                                raise SystemExit
+                                                  
                                             el=eo
                                             eo=eo+14
                                             takebit2=sda[el:eo]
@@ -377,47 +414,7 @@ class compression:
                                                 sw=sw+1
                                                    
                                             wers=""
-
-
-                                            
-                                    el=eo
-                                    eo=eo+2352014
-                                    takebitsize=sda[el:eo]
-                                    xssd=len(takebitsize)
-                                    el=eo-2352014
-                                    eo=eo-2352014
-
-                                            
-                                            
-                                    wer=wer+takebitsize
-                                    C=C+xssd
-                                                   
-                                    n = int(wer, 2)
                                         
-                                    qqwslenf=len(wer)
-                                    qqwslenf=(qqwslenf/8)*2
-                                    qqwslenf=str(qqwslenf)
-                                    qqwslenf="%0"+qqwslenf+"x"
-                                             
-                                    jl=binascii.unhexlify(qqwslenf % n)
-                                    sssssw=len(jl)
-                                    data=jl
-                                    qqqwz=qqqwz+1
-                                    szxzzza=""
-                                    szxzs=""
-                                        
-                                    blockw=4
-                                    blockw1=3
-                                    
-                                    #print(sssssw)
-                                            
-                                    wer=""
-                                       
-                                    assx=10
-                                        
-                                    f2.write(jl)
-                                    
-                                                      
 
 
                                     wer=wer+sda[C:]
@@ -805,6 +802,7 @@ class compression:
                             jls=jl
                             x2 = time()
                             x3 = x2-x
+
 
     def cryptograpy_compression4(self):
                 
