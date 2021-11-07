@@ -327,7 +327,7 @@ class compression:
                                             
                                             if xssd<=2352014:
                                                 wer=wer+takebitsize
-                                                C=C+2352014
+                                                C=C+xssd
                                                    
                                                 n = int(wer, 2)
                                         
@@ -1047,7 +1047,7 @@ class compression:
                                             
                                             if xssd<=2352014:
                                                 wer=wer+takebitsize
-                                                C=C+2352014
+                                                C=C+xssd
                                                    
                                                 n = int(wer, 2)
                                         
