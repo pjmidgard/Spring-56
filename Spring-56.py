@@ -325,7 +325,7 @@ class compression:
                                             eo=eo-2352014
 
                                             
-                                            if xssd<=2352014:
+                                            if xssd>2351999:
                                                 wer=wer+takebitsize
                                                 C=C+xssd
                                                    
@@ -1045,7 +1045,7 @@ class compression:
                                             eo=eo-2352014
 
                                             
-                                            if xssd<=2352014:
+                                            if xssd>2351999:
                                                 wer=wer+takebitsize
                                                 C=C+xssd
                                                    
