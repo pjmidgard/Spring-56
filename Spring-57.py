@@ -318,14 +318,14 @@ class compression:
                                             
                                             
                                             el=eo
-                                            eo=eo+2212014
+                                            eo=eo+2324014
                                             takebitsize=sda[el:eo]
                                             xssd=len(takebitsize)
-                                            el=eo-2212014
-                                            eo=eo-2212014
+                                            el=eo-2324014
+                                            eo=eo-2324014
 
                                             
-                                            if xssd<2211999:
+                                            if xssd<2323999:
                                                 wer=wer+takebitsize
                                                 C=C+xssd
                                                    
@@ -361,7 +361,7 @@ class compression:
                                             takebitdw2=int(takebit2, 2)
                                             
                                             el=eo
-                                            eo=eo+2211999
+                                            eo=eo+2324014
                                             takebit=sda[el:eo]
              
                                             takebitdw=int(takebit, 2)
@@ -369,7 +369,7 @@ class compression:
                                             numbertc=takebitdw
                                             
                                                
-                                            while sw<158001:
+                                            while sw<166001:
                                                     
                                                 numbertc3=numbertc%16383
                                                 numbertc1=numbertc//16383
@@ -400,10 +400,10 @@ class compression:
                                             ddr=len(wers)
                                             
                                             sw=0
-                                            el1=2212014
-                                            eo1=2212014
+                                            el1=2324014
+                                            eo1=2324014
                                            
-                                            while sw<158001:
+                                            while sw<166001:
                                                     
                                                 el1=eo1
                                                 eo1=eo1-14
@@ -527,8 +527,8 @@ class compression:
                         numberschangenotexist = []
                         numbers = []
                         
-                        block=158001
-                        blockw=158000
+                        block=166001
+                        blockw=166000
                         blockw1=16384
                         virationc=16383
                         bitc=14
@@ -735,11 +735,11 @@ class compression:
                                     
                                     
                                     if lenfg>0:
-                                        if lenf>2211999:
+                                        if lenf>2323999:
                                             raise SystemExit
-                                        xc=2211999-lenf
+                                        xc=2323999-lenf
                                         z=0
-                                        if xc!=0 and lenf!=2211999:
+                                        if xc!=0 and lenf!=2323999:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
