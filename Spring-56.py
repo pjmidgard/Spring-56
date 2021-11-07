@@ -72,8 +72,8 @@ szx=""
 wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
 
-f = open("PI_10M.txt", "r")
-PI=f.read()
+#f = open("PI_10M.txt", "r")
+#PI=f.read()
 
 
 #@Author Jurijus pacalovas
@@ -385,9 +385,9 @@ class compression:
                                                 szxzzz=""
                                                 szxzzz=bin(numbertc3)[2:]
                                                 dd=len(szxzzz)
-                                                xc=14-dd%14
+                                                xc=2351999-dd
                                                 z=0
-                                                if xc!=0 and dd!=14:
+                                                if xc!=0 and dd!=2351999:
                                                     while z<xc:
                                                         szxzzz="0"+szxzzz
                                                         z=z+1
@@ -1105,9 +1105,9 @@ class compression:
                                                 szxzzz=""
                                                 szxzzz=bin(numbertc3)[2:]
                                                 dd=len(szxzzz)
-                                                xc=14-dd%14
+                                                xc=2351999-dd
                                                 z=0
-                                                if xc!=0 and dd!=14:
+                                                if xc!=0 and dd!=2351999:
                                                     while z<xc:
                                                         szxzzz="0"+szxzzz
                                                         z=z+1
