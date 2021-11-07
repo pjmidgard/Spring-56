@@ -1107,7 +1107,7 @@ class compression:
                                                 dd=len(szxzzz)
                                                 xc=2351999+15-dd
                                                 z=0
-                                                if xc!=0 and dd!2351999+15:
+                                                if xc!=0 and dd!=2351999+15:
                                                     while z<xc:
                                                         szxzzz="0"+szxzzz
                                                         z=z+1
